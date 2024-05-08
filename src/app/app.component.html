@@ -1,0 +1,19 @@
+<nav class="bg-gray-800 text-white py-4">
+  <div class="container mx-auto text-center">
+    <div class="text-2xl font-bold">House Prediction App</div>
+  </div>
+</nav>
+
+<div class="container mx-auto mt-10 p-10 bg-gray-100 rounded-lg shadow-lg">
+  <form action="" class="flex flex-col items-center">
+    <div class="mb-4 w-full">
+      <label for="pincode" class="block text-gray-700 text-sm font-bold mb-2">Pincode:</label>
+      <input [(ngModel)]="postcode" name="pincode" type="text" id="pincode" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="mb-4 w-full">
+      <label for="rooms" class="block text-gray-700 text-sm font-bold mb-2">No of rooms:</label>
+      <input [(ngModel)]="rooms" name="rooms" type="text" id="rooms" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <button (click)="generateMap()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Generate Map</button>
+  </form>
+</div>
